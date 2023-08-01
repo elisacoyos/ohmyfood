@@ -1,0 +1,19 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+   
+  }
+
+  body {
+    margin: 0;
+  }
+
+header {
+    text-align: center;
+    padding: 1.7rem;
+}
+
+  header img {
+    width: 200px;   
+}
