@@ -9,6 +9,7 @@
   --tertiary-color: #99E2D0;
   --gray-color: #353535;
   --main-bg-color: #EAEAEA;
+  --secondary-bg-color: #F6F6F6;
 }
 
 
@@ -28,15 +29,20 @@
   }
 
 header {
+  font-family: "Shrikhand", cursive;
     text-align: center;
-    padding: 1.7rem;
+    box-shadow: 0 3px 3px 1px #D0D0D0;
+    padding: 0.5rem;
+    position: relative;
 }
+ 
 
 .logo {
   width: 200px;
 }
 
 main .city {
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,13 +50,53 @@ main .city {
   background-color: var(--main-bg-color);
   padding: 0.5rem;
   color: var(--gray-color);
+
 }
 
 main .city h2 {
   font-size: 19px;
-  font-family: sans-serif;
+  font-weight: 500;
 }
 
 main .city i {
   font-size: 1.5rem;
+}
+
+
+/* EXPLORER */
+
+.explorer {
+  text-align: center;
+  
+  background-color: var(--secondary-bg-color);
+}
+
+.explorer h1 {
+  padding: 2.5rem 0 0 0;
+  margin: 0;
+  font-size: 2.5rem;
+}
+.explorer p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding-bottom: 0.5rem;
+  
+}
+.button-explorer {
+  background-image: linear-gradient(var(--secondary-color), var(--primary-color));
+  font-size: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  box-shadow: 0px 2px 8px -3px #000000;
+  margin-bottom: 
+  3.5rem;
+  
+  
+}
+.button-explorer:hover {
+  transform: scale(1.02);
+  opacity: 0.8;
+  cursor: pointer;
 }
