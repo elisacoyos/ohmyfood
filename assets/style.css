@@ -41,6 +41,9 @@ header {
   width: 200px;
 }
 
+main {
+  padding: 0.1rem;
+}
 main .city {
   
   display: flex;
@@ -99,4 +102,35 @@ main .city i {
   transform: scale(1.02);
   opacity: 0.8;
   cursor: pointer;
+}
+
+
+/* FUNCTIONING */
+
+.functioning i {
+  color: #7E7E7E;
+  margin-right: 1rem;
+}
+
+
+.functioning li {
+  background-color: var(--main-bg-color);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  box-shadow: 0.25rem 0.25rem 0.5rem rgba(0,0,0,.125);
+  font-weight: 500;
+}
+
+
+/* MENU */
+
+.menu {
+  background-color: var(--main-bg-color);
+}
+
+.card {
+width: 1rem;
+height: 1rem;
 }
