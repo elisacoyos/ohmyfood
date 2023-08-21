@@ -1,0 +1,122 @@
+/* MENU */
+
+
+
+.menu {
+    background-color: $secondary-bg-color;
+    padding: 2rem 1rem;
+    }
+  
+  .menu_cards {
+    display: grid;
+    gap: 2rem;
+    }
+  
+    
+  .card__img {
+      height: 12rem;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 1rem 1rem 0 0;
+    }
+  .card {
+      text-decoration: none;
+      color: $black-color;
+      border-radius: 1rem;
+      background-color: $white-color;
+      
+    }
+
+    .card__badge {
+      background-color: $badge-bg-color;
+      color: $badge-text-color;
+      padding: 0.5rem;
+      border-radius: 0.125rem;
+      position: absolute;
+      bottom: 15rem;
+      right: 2.5rem;
+    }
+
+  .card__description {
+      height: 6rem;
+      position: relative;
+      border-radius: 0 0 1rem 1rem;
+
+      &::before {
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 400;
+        content: "\f004";
+        font-size: 2rem;
+        position: absolute;
+        right: 1rem;
+        top: 1.5rem;
+        color: inherit; 
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 1;
+        transition: 300ms;
+        
+      }
+
+
+      &::after {
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 400;
+        content: "\f004";
+        font-size: 2rem;
+        position: absolute;
+        right: 1rem;
+        top: 1.5rem;
+        color: inherit; 
+        background-clip: text;
+        -webkit-background-clip: text;
+        opacity: 1;
+        transition: 300ms;
+
+
+        background-image: linear-gradient( $primary-color, $secondary-color);
+
+        color: transparent;
+        font-weight: 900;
+        opacity: 0;
+      }
+
+        &:hover::after {
+          opacity: 1;
+        }
+
+      
+      
+      
+      & h3 {
+        margin-bottom: 0;
+      }
+      & p {
+        margin-top: 0.5rem;
+      }
+    
+      
+       
+        
+      
+
+
+
+    }
+  
+
+
+  
+  
+
+ 

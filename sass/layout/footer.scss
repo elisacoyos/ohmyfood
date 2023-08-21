@@ -1,0 +1,17 @@
+/* FOOTER */
+
+footer {
+    background-color: $gray-color;
+    padding: 0 2rem;
+    color: $white-color;
+  
+    & h2 {
+      font-family: "Shrikhand", "sans-serif";
+      font-weight: 500;
+      margin-top: 0;
+  }
+    & a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }

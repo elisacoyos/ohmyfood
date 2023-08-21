@@ -1,0 +1,59 @@
+/* FUNCTIONING */
+
+.functioning {
+    counter-reset: steps;
+  
+  
+    & ol{
+      @media (min-width: 1024px) {
+      display: flex;
+      gap: 2rem;
+      width: 100%;
+      }
+    }
+  
+    & i {
+    color: $home-icon-color;
+    margin-right: 1rem;
+    margin-left: -3rem;
+    font-size: 1rem;
+
+    &:hover {
+      color: $primary-color;
+    }
+
+    }
+  
+  
+    & li {
+     &::before {
+      content: counter(steps);
+      counter-increment: steps;
+      color: $secondary-bg-color;
+      background-color: $primary-color;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      position: absolute;
+      bottom: 1.3rem;
+      left: -1rem;
+      }
+  
+    position: relative;
+    list-style-type: none;
+    background-color: $main-bg-color;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.225);
+    font-weight: 500;
+  
+    @media (min-width: 1024px) {
+      width: 100%;
+      margin-right: 1rem;
+      }
+    }
+  }
