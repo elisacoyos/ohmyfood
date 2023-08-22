@@ -16,18 +16,23 @@
       font-weight: 300;
       padding-bottom: 0.5rem;  
     }  
-    & button {
+    
+   
+    
+  }
 
-      background-image: linear-gradient( $primary-color, $secondary-color);
-      
-      font-size: 1rem;
-      padding: 1rem 2rem;
-      border-radius: 2rem;
-      border: none;
-      color: $white-color;
-      box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.0625);
-      margin-bottom: 3.5rem;    
-    }
+  .button__gradient {
+
+    background-image: linear-gradient( $primary-color, $secondary-color);
+    
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    border: none;
+    color: $white-color;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.0625);
+    margin-bottom: 3.5rem;
+    
     & button:hover {
       transform: scale(1.02);
       opacity: 0.8;
