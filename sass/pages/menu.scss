@@ -4,12 +4,17 @@
 
 .menu {
     background-color: $secondary-bg-color;
-    padding: 2rem 1rem;
+    padding: 2rem 4rem;
     }
   
   .menu_cards {
     display: grid;
     gap: 2rem;
+
+    @media (min-width: 1024px) {
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+  }
     }
   
     
@@ -41,6 +46,7 @@
       height: 6rem;
       position: relative;
       border-radius: 0 0 1rem 1rem;
+      padding-left: 1.5rem;
 
       &::before {
         display: inline-block;
@@ -93,9 +99,7 @@
 
         &:hover::after {
           opacity: 1;
-        }
-
-      
+        }   
       
       
       & h3 {
@@ -103,15 +107,7 @@
       }
       & p {
         margin-top: 0.5rem;
-      }
-    
-      
-       
-        
-      
-
-
-
+      }     
     }
   
 

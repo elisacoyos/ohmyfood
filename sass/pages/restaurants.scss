@@ -1,11 +1,25 @@
 .header__pages {
     box-shadow: none;
+    position: relative;
     
     & h1 {
         margin: 0;
         padding: 1rem;
     }
 }
+
+
+    .header__arrow {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        font-size: 25px;
+        left: 2rem;
+        color: $black-color;
+    }
+
+
 
 .banner img {
     display: block;
@@ -100,18 +114,37 @@ h2 {
     flex-direction: column;
     gap: 1rem;
     padding: 0 1rem;
+    margin-bottom: 1rem;
     
+    & h3 {
+        text-transform: uppercase;
+        font-weight: 300;
+        position: relative;
+        &::after {
+            content: "";
+            height: 0.25rem;
+            width: 2.9rem;
+            background-color: $tertiary-color;
+            position: absolute;
+            top: 1.5rem;
+            left: 0;
+            
+        }
+
+    }
     
     .submenus__category {
         
         background-color: $white-color;
         border-radius: 1rem;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.225);
+        animation: appear 1s;
         
         .submenus__items {
             display: flex;   
             border-radius: 1rem;
             overflow: hidden;
+            
             & h4, p {
                 margin: 0;
             }
@@ -170,9 +203,10 @@ h2 {
 
     }
 
-    & button:hover {
+    &:hover {
         transform: scale(1.02);
         opacity: 0.8;
         cursor: pointer;
       }
 }
+

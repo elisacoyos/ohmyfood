@@ -9,6 +9,7 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  height: 100vh;
 }
 
 header {
@@ -65,7 +66,7 @@ header h1 {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.0625);
   margin-bottom: 3.5rem;
 }
-.button__gradient button:hover {
+.button__gradient:hover {
   transform: scale(1.02);
   opacity: 0.8;
   cursor: pointer;
@@ -74,6 +75,10 @@ header h1 {
 /* FUNCTIONING */
 .functioning {
   counter-reset: steps;
+  padding: 0 3rem;
+}
+.functioning h2 {
+  margin-left: 2rem;
 }
 @media (min-width: 1024px) {
   .functioning ol {
@@ -126,12 +131,18 @@ header h1 {
 /* MENU */
 .menu {
   background-color: #F6F6F6;
-  padding: 2rem 1rem;
+  padding: 2rem 4rem;
 }
 
 .menu_cards {
   display: grid;
   gap: 2rem;
+}
+@media (min-width: 1024px) {
+  .menu_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .card__img {
@@ -162,6 +173,7 @@ header h1 {
   height: 6rem;
   position: relative;
   border-radius: 0 0 1rem 1rem;
+  padding-left: 1.5rem;
 }
 .card__description::before {
   display: inline-block;
@@ -217,8 +229,11 @@ header h1 {
 /* FOOTER */
 footer {
   background-color: #353535;
-  padding: 0 2rem;
+  padding: 1rem 2rem;
   color: #FFFFFF;
+}
+footer i {
+  padding-right: 0.5rem;
 }
 footer h2 {
   font-family: "Shrikhand", "sans-serif";
@@ -232,10 +247,21 @@ footer a {
 
 .header__pages {
   box-shadow: none;
+  position: relative;
 }
 .header__pages h1 {
   margin: 0;
   padding: 1rem;
+}
+
+.header__arrow {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 25px;
+  left: 2rem;
+  color: #000000;
 }
 
 .banner img {
@@ -316,11 +342,27 @@ footer a {
   flex-direction: column;
   gap: 1rem;
   padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+.submenus h3 {
+  text-transform: uppercase;
+  font-weight: 300;
+  position: relative;
+}
+.submenus h3::after {
+  content: "";
+  height: 0.25rem;
+  width: 2.9rem;
+  background-color: #99E2D0;
+  position: absolute;
+  top: 1.5rem;
+  left: 0;
 }
 .submenus .submenus__category {
   background-color: #FFFFFF;
   border-radius: 1rem;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.225);
+  animation: appear 1s;
 }
 .submenus .submenus__category .submenus__items {
   display: flex;
@@ -371,10 +413,19 @@ footer a {
   margin: 2rem;
   padding: 1rem 3rem;
 }
-.button__commander button:hover {
+.button__commander:hover {
   transform: scale(1.02);
   opacity: 0.8;
   cursor: pointer;
+}
+
+@keyframes appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
