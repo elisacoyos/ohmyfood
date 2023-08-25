@@ -23,7 +23,7 @@
 
   .button__gradient {
 
-    background-image: linear-gradient( $primary-color, $secondary-color);
+    @include gradient;
     
     font-size: 1rem;
     padding: 1rem 2rem;

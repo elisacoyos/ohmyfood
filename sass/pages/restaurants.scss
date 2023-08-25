@@ -109,12 +109,20 @@ h2 {
     background-color: $secondary-bg-color;
 }
 
+
+
 .submenus {
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding: 0 1rem;
     margin-bottom: 1rem;
+    animation: appear 1s;
+    animation-fill-mode: forwards;
+
+   
+
+    
     
     & h3 {
         text-transform: uppercase;
@@ -138,12 +146,18 @@ h2 {
         background-color: $white-color;
         border-radius: 1rem;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.225);
-        animation: appear 1s;
+        
+        
+       
+        
+        
         
         .submenus__items {
             display: flex;   
             border-radius: 1rem;
             overflow: hidden;
+           
+            
             
             & h4, p {
                 margin: 0;
@@ -191,6 +205,22 @@ h2 {
         }
     }
 }
+
+
+
+.delay-0 {
+    animation-delay: 0s;
+}
+
+.delay-1 {
+    animation-delay: 0.5s;
+}
+
+.delay-2 {
+    animation-delay: 1s;
+}
+
+
 
 .button__commander {
     display: flex;

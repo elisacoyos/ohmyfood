@@ -1,6 +1,8 @@
 
-@import "./bases";
+
 @import "./utils/colors";
+@import "./utils/mixins.scss";
+@import "./bases";
 @import "./layout/header";
 @import "./pages/city";
 @import "./pages/explorer";
@@ -8,7 +10,8 @@
 @import "./pages/menu.scss";
 @import "./layout/footer.scss";
 @import "./pages/restaurants.scss"; 
-@import "./utils/animation.scss"
+@import "./utils/animation.scss";
+
 
 
 

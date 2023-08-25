@@ -205,7 +205,6 @@ header h1 {
   font-size: 2rem;
   position: absolute;
   right: 1rem;
-  top: 0;
   color: inherit;
   background-clip: text;
   -webkit-background-clip: text;
@@ -215,6 +214,7 @@ header h1 {
   color: transparent;
   font-weight: 900;
   opacity: 0;
+  top: 0;
 }
 .card__description:hover::after {
   opacity: 1;
@@ -343,6 +343,8 @@ footer a {
   gap: 1rem;
   padding: 0 1rem;
   margin-bottom: 1rem;
+  animation: appear 1s;
+  animation-fill-mode: forwards;
 }
 .submenus h3 {
   text-transform: uppercase;
@@ -362,7 +364,6 @@ footer a {
   background-color: #FFFFFF;
   border-radius: 1rem;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.225);
-  animation: appear 1s;
 }
 .submenus .submenus__category .submenus__items {
   display: flex;
@@ -402,6 +403,18 @@ footer a {
 }
 .submenus .submenus__category .submenus__items:hover .submenus__check {
   margin-right: 0;
+}
+
+.delay-0 {
+  animation-delay: 0s;
+}
+
+.delay-1 {
+  animation-delay: 0.5s;
+}
+
+.delay-2 {
+  animation-delay: 1s;
 }
 
 .button__commander {
