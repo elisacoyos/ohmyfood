@@ -54,14 +54,11 @@
 
 
       &::after {
-       @include heart;
+        @include heart;
         @include gradient;
-
         color: transparent;
         font-weight: 900;
         opacity: 0;
-
-
         top: 0;
       }
 

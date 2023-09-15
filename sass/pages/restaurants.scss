@@ -35,70 +35,61 @@
     background-color: $secondary-bg-color;
     margin-top: -3rem;
     border-radius: 2rem 2rem 0 0;
-    
 
-h2 {  
-    
-    position: relative;
-    font-family: "Shrikhand", sans-serif;
-    font-weight: 400;
-    padding: 2rem 1rem;
-    margin-bottom: 0;
-
-
-    &::before {
-        display: inline-block;
-        font-style: normal;
-        font-variant: normal;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        font-family: "Font Awesome 5 Free";
+    h2 {
+        position: relative;
+        font-family: "Shrikhand", sans-serif;
         font-weight: 400;
-        content: "\f004";
-        font-size: 2rem;
-        position: absolute;
-        right: 1rem;
+        padding: 2rem 1rem;
+        margin-bottom: 0;
         
-        color: inherit; 
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 1;
-        transition: 300ms;
+        &::before {
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 400;
+            content: "\f004";
+            font-size: 2rem;
+            position: absolute;
+            right: 1rem;
+            color: inherit; 
+            background-clip: text;
+            -webkit-background-clip: text;
+            opacity: 1;
+            transition: 300ms;    
+        }
+
+
+        &::after {
+            display: inline-block;
+            font-style: normal;
+            font-variant: normal;
+            -webkit-font-smoothing: antialiased;
+            font-family: "Font Awesome 5 Free";
+            font-weight: 400;
+            content: "\f004";
+            font-size: 2rem;
+            position: absolute;
+            right: 1rem;      
+            color: inherit; 
+            background-clip: text;
+            -webkit-background-clip: text;
+            opacity: 1;
+            transition: 300ms;
+            background-image: linear-gradient( $primary-color, $secondary-color);
+            color: transparent;
+            font-weight: 900;
+            opacity: 0;
+            text-rendering: auto;
         
-      }
-
-
-      &::after {
-        display: inline-block;
-        font-style: normal;
-        font-variant: normal;
-        text-rendering: auto;
-        -webkit-font-smoothing: antialiased;
-        font-family: "Font Awesome 5 Free";
-        font-weight: 400;
-        content: "\f004";
-        font-size: 2rem;
-        position: absolute;
-        right: 1rem;
-        
-        color: inherit; 
-        background-clip: text;
-        -webkit-background-clip: text;
-        opacity: 1;
-        transition: 300ms;
-
-
-        background-image: linear-gradient( $primary-color, $secondary-color);
-
-        color: transparent;
-        font-weight: 900;
-        opacity: 0;
-      }
+        }
 
         &:hover::after {
           opacity: 1;
         }
-
 
 }
 
@@ -109,8 +100,6 @@ h2 {
     background-color: $secondary-bg-color;
 }
 
-
-
 .submenus {
     display: flex;
     flex-direction: column;
@@ -118,11 +107,7 @@ h2 {
     padding: 0 1rem;
     margin-bottom: 1rem;
     animation: appear 1s;
-    animation-fill-mode: forwards;
-
-   
-
-    
+    animation-fill-mode: forwards;  
     
     & h3 {
         text-transform: uppercase;
@@ -135,49 +120,39 @@ h2 {
             background-color: $tertiary-color;
             position: absolute;
             top: 1.5rem;
-            left: 0;
-            
+            left: 0;       
         }
 
     }
     
-    .submenus__category {
-        
-        background-color: $white-color;
+.submenus__category {
+    background-color: $white-color;
+    border-radius: 1rem;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.225);
+
+    .submenus__items {
+        display: flex;   
         border-radius: 1rem;
-        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.225);
+        overflow: hidden;
         
-        
-       
-        
-        
-        
-        .submenus__items {
-            display: flex;   
-            border-radius: 1rem;
-            overflow: hidden;
-           
-            
-            
-            & h4, p {
-                margin: 0;
-            }
-            .submenus__description {
-                padding: 1rem;
-                
-            }
+        & h4, p {
+            margin: 0;
+        }
 
-            .submenus__price {
-                display: flex;
-                align-items: flex-end;
-                margin-left: auto; 
-                font-weight: 700;
-                padding: 1rem;
-                
-           }
+        .submenus__description {
+            padding: 1rem;
+        }
+
+        .submenus__price {
+            display: flex;
+            align-items: flex-end;
+            margin-left: auto; 
+            font-weight: 700;
+            padding: 1rem; 
+        }
 
 
-           .submenus__check{
+        .submenus__check{
             background-color: $tertiary-color;
             margin-right: -4rem;
             width: 4rem;
@@ -194,16 +169,14 @@ h2 {
                 color: $tertiary-color;
                 font-weight: 900;
 
-            }
-            
-            
-           }
+            }  
+        }
 
-           &:hover .submenus__check {
+        &:hover .submenus__check {
             margin-right: 0;
-           }
         }
     }
+}
 }
 
 
@@ -220,8 +193,6 @@ h2 {
     animation-delay: 1s;
 }
 
-
-
 .button__commander {
     display: flex;
     flex-direction: column;
@@ -237,6 +208,6 @@ h2 {
         transform: scale(1.02);
         opacity: 0.8;
         cursor: pointer;
-      }
+    }
 }
 

@@ -22,12 +22,20 @@
     margin-left: -3rem;
     font-size: 1rem;
 
+     
+
     &:hover {
       color: $primary-color;
     }
 
+    @media (min-width: 1024px) {
+      margin-left: -1rem;
+      }
     }
-  
+
+    .fa-mobile-alt {
+      margin-left: -2rem;
+    }
   
     & li {
      &::before {
@@ -60,4 +68,5 @@
       margin-right: 1rem;
       }
     }
-  }
+}
+
